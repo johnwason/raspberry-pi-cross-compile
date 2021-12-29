@@ -27,11 +27,12 @@ The result of these steps is a toolchain file located at
 /opt/toolchains/gcc-8-armv6.cmake .  Programs can be
 run in the chroot using the command format:
 
-  schroot -c raspbian_buster_armhf -- my_command
+    schroot -c raspbian_buster_armhf -- my_command
 
 This script requires a working "sudo" command
 
-  readelf -a -W app  | grep CPU
+    readelf -a -W app  | grep CPU
+
 to check CPU
 
 References:
